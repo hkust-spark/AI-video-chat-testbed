@@ -1,0 +1,153 @@
+{
+  "apps": {
+    "gemini": {
+      "package_name": "com.google.android.googlequicksearchbox",
+      "launch_command": ["shell", "input", "tap", "70", "100"],
+      "reset_command": ["shell", "am", "force-stop", "com.google.android.googlequicksearchbox"],
+      "canvas_size": [1828, 1028],
+      "video_size": [896, 504],
+      "steps": {
+        "new_conversation": {
+          "commands": [
+            {"type": "noop", "description": "Gemini opens directly into a fresh conversation"}
+          ]
+        },
+        "start_call": {
+          "commands": [
+            {"type": "tap", "x": 900, "y": 550, "description": "Start Gemini live call"}
+          ]
+        },
+        "enable_camera": {
+          "commands": [
+            {"type": "tap", "x": 920, "y": 210, "description": "Enable Gemini camera"}
+          ]
+        },
+        "end_call": {
+          "commands": [
+            {"type": "tap", "x": 920, "y": 400, "description": "End Gemini call"}
+          ]
+        }
+      }
+    },
+    "grok": {
+      "package_name": "ai.x.grok",
+      "launch_command": ["shell", "monkey", "-p", "ai.x.grok", "-c", "android.intent.category.LAUNCHER", "1"],
+      "reset_command": ["shell", "am", "force-stop", "ai.x.grok"],
+      "canvas_size": [1706, 960],
+      "video_size": [960, 540],
+      "steps": {
+        "new_conversation": {
+          "commands": [
+            {"type": "noop", "description": "Grok opens directly into a fresh conversation"}
+          ]
+        },
+        "start_call": {
+          "commands": [
+            {"type": "tap", "x": 900, "y": 560, "description": "Start Grok call"}
+          ]
+        },
+        "enable_camera": {
+          "commands": [
+            {"type": "tap", "x": 130, "y": 500, "description": "Enable Grok camera"}
+          ]
+        },
+        "end_call": {
+          "commands": [
+            {"type": "tap", "x": 950, "y": 560, "description": "End Grok call"}
+          ]
+        }
+      }
+    },
+    "doubao": {
+      "package_name": "com.larus.nova",
+      "launch_command": ["shell", "monkey", "-p", "com.larus.nova", "-c", "android.intent.category.LAUNCHER", "1"],
+      "reset_command": ["shell", "am", "force-stop", "com.larus.nova"],
+      "canvas_size": [1334, 752],
+      "video_size": [1228, 690],
+      "steps": {
+        "new_conversation": {
+          "commands": [
+            {"type": "tap", "x": 40, "y": 70, "description": "Open Doubao new conversation menu"},
+            {"type": "tap", "x": 550, "y": 70, "description": "Confirm Doubao new conversation"}
+          ]
+        },
+        "start_call": {
+          "commands": [
+            {"type": "tap", "x": 480, "y": 70, "description": "Start Doubao call"}
+          ]
+        },
+        "enable_camera": {
+          "commands": [
+            {"type": "noop", "description": "Doubao camera is on by default"}
+          ]
+        },
+        "end_call": {
+          "commands": [
+            {"type": "tap", "x": 510, "y": 840, "description": "End Doubao call"}
+          ]
+        }
+      }
+    },
+    "yuanbao": {
+      "package_name": "com.tencent.hunyuan.app.chat",
+      "launch_command": ["shell", "monkey", "-p", "com.tencent.hunyuan.app.chat", "-c", "android.intent.category.LAUNCHER", "1"],
+      "reset_command": ["shell", "am", "force-stop", "com.tencent.hunyuan.app.chat"],
+      "canvas_size": [1706, 960],
+      "video_size": [960, 540],
+      "steps": {
+        "new_conversation": {
+          "commands": [
+            {"type": "noop", "description": "Yuanbao opens directly into a fresh conversation"}
+          ]
+        },
+        "start_call": {
+          "commands": [
+            {"type": "tap", "x": 500, "y": 60, "description": "Start Yuanbao call"}
+          ]
+        },
+        "enable_camera": {
+          "commands": [
+            {"type": "tap", "x": 60, "y": 890, "description": "Enable Yuanbao camera"}
+          ]
+        },
+        "end_call": {
+          "commands": [
+            {"type": "tap", "x": 540, "y": 890, "description": "End Yuanbao call"}
+          ]
+        }
+      }
+    },
+    "qwen": {
+      "package_name": "com.aliyun.tongyi",
+      "launch_command": ["shell", "monkey", "-p", "com.aliyun.tongyi", "-c", "android.intent.category.LAUNCHER", "1"],
+      "reset_command": ["shell", "am", "force-stop", "com.aliyun.tongyi"],
+      "canvas_size": [1408, 792],
+      "video_size": [1164, 655],
+      "steps": {
+        "new_conversation": {
+          "commands": [
+            {"type": "tap", "x": 35, "y": 60, "description": "Open Qwen new conversation menu"},
+            {"type": "tap", "x": 230, "y": 120, "description": "Confirm Qwen new conversation"}
+          ]
+        },
+        "start_call": {
+          "commands": [
+            {"type": "swipe", "x1": 590, "y1": 830, "x2": 10, "y2": 830, "duration_ms": 800, "description": "Reveal Qwen call tools (first swipe)"},
+            {"type": "swipe", "x1": 590, "y1": 830, "x2": 10, "y2": 830, "duration_ms": 800, "description": "Reveal Qwen call tools (retry for reliability)"},
+            {"type": "tap", "x": 210, "y": 830, "description": "Start Qwen call"}
+          ]
+        },
+        "enable_camera": {
+          "commands": [
+            {"type": "tap", "x": 430, "y": 870, "description": "Enable Qwen camera"}
+          ]
+        },
+        "end_call": {
+          "commands": [
+            {"type": "tap", "x": 300, "y": 870, "description": "End Qwen call"}
+          ]
+        }
+      }
+    }
+  }
+}

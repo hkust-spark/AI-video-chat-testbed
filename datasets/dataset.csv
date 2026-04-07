@@ -1,0 +1,132 @@
+video_id,video_duration,question_id,question_timestamp,task_type,question,answer
+real_sample_9_1,00:01:13,1,00:00:10,Text-Rich Understanding,What card did the opponent just play?,Nine of Spades.
+real_sample_9_1,00:01:13,2,00:00:54,Object Perception,What else is on the table besides the playing cards and a black object?,A pair of glasses.
+real_sample_9_1,00:01:13,3,00:01:13,Prospective Reasoning,What card will the camera holder most likely play next?,Four of hearts.
+real_sample_203_1,00:01:59,1,00:00:27,Counting,How many studs does each green interlocking block placed by the hand have?,Eight.
+real_sample_203_1,00:01:59,2,00:01:10,Counting,How many studs does each orange interlocking block placed by the hand have?,Four.
+real_sample_203_1,00:01:59,3,00:01:59,Counting,How many studs does each blue interlocking block placed by the hand have?,Twelve.
+real_sample_203_2,00:00:19,1,00:00:19,Counting,How many interlocking blocks are positioned in a straight line by the hand?,Four.
+real_sample_203_3,00:00:14,1,00:00:14,Attribute Perception,What is the color of the block that the hand is reaching for right now?,Yellow.
+real_sample_203_4,00:00:13,1,00:00:13,Event Understanding,What is the sequence of colors of the bricks added to the structure after the blue bricks?,"Green, yellow, orange."
+real_sample_4_1,00:02:11,1,00:00:20,Object Perception,What emblem appears at the beginning of the video?,A football club shield / Barcelona.
+real_sample_4_1,00:02:11,2,00:01:04,Text-Rich Understanding,What is the current score and which team is leading?,"2-0, the team in blue and red / Barcelona is leading."
+real_sample_4_1,00:02:11,3,00:02:11,Event Understanding,What is the updated score after this player scored a goal?,4-0.
+real_sample_53_1,00:02:23,1,00:00:22,Action Perception,What is being done with the cutting mat?,Placing the cutting mat into the cutting machine.
+real_sample_53_1,00:02:23,2,00:01:25,Action Perception,What are the hands holding now?,The pen and keychain.
+real_sample_53_1,00:02:23,3,00:02:23,Action Perception,What did the hands do just now?,Smooth out the acetate window on the paper frame.
+real_sample_295_1,00:02:56,1,00:00:11,Text-Rich Understanding,What is the displayed speed of the cyclist right now?,40 km/h.
+real_sample_295_1,00:02:56,2,00:00:54,Spatial Understanding,Where are the yellow sign and black arrow right now?,On the left side of the road.
+real_sample_295_1,00:02:56,3,00:01:21,Spatial Understanding,Where are the orange traffic cones right now?,To the right of the cyclist.
+real_sample_295_1,00:02:56,4,00:02:23,Spatial Understanding,What's on the cyclist's left now?,Fence bordering trees.
+real_sample_295_1,00:02:56,5,00:02:56,Spatial Understanding,Where is the cyclist positioned in the lane right now?,On the left side of the lane.
+real_sample_295_2,00:00:12,1,00:00:12,Text-Rich Understanding,What is the total length of the cycling race?,57.9 km
+real_sample_376_1,00:00:10,1,00:00:10,Clips Summarize,Please summarize all the actions this person just performed.,"The individual retrieved a container with liquid, uncovered it, and began stirring its contents."
+real_sample_376_2,00:00:12,1,00:00:12,Clips Summarize,Please summarize all the actions this person just performed.,"The individual placed food on a grill, removed gloves, and discarded them in the trash."
+real_sample_376_3,00:00:13,1,00:00:13,Clips Summarize,Please summarize all the actions this person just performed.,The individual retrieved cooked meat from a tray and placed it into a serving container.
+real_sample_376_4,00:00:25,1,00:00:25,Clips Summarize,Please summarize all the actions this person just performed.,"The individual placed meat in a container, put cooked chicken in the oven, and then prepared buns."
+real_sample_376_5,00:00:09,1,00:00:09,Clips Summarize,Please summarize all the actions this person just performed.,The individual prepared a chicken sandwich by adding BBQ sauce and placing it on a bun with pickled cucumber and onions.
+real_sample_232_1,00:04:13,1,00:00:17,Causal Reasoning,Why does the frog appear from the toilet?,Because the chicken that was thrown in was pulled out with the frog.
+real_sample_232_1,00:04:13,2,00:01:26,Causal Reasoning,Why does the rabbit dressed in red and white start to become restless?,"Because the fly just disturbed him, he is swatting the fly."
+real_sample_232_1,00:04:13,3,00:02:54,Causal Reasoning,Why is this cartoon chicken very shocked now?,Because just now another small cartoon chicken was eaten by a frog.
+real_sample_232_1,00:04:13,4,00:04:13,Causal Reasoning,Why is this red rabbit standing in front of the iron gate now?,Because the cartoon character on the iron gate has been whistling just now.
+real_sample_122_1,00:02:54,1,00:00:15,Text-Rich Understanding,What text is prominently shown on the packaging of the darker graphics card?,INSPIRED BY GAMERS. BUILT BY NVIDIA.
+real_sample_122_1,00:02:54,2,00:01:01,Text-Rich Understanding,"Is ""GTA Five"" listed on the comparison chart shown right now?",No.
+real_sample_122_1,00:02:54,3,00:01:36,Text-Rich Understanding,"Is ""Shadow of the Tomb Raider"" listed on the comparison chart?",Yes.
+real_sample_122_1,00:02:54,4,00:02:54,Text-Rich Understanding,What is the brand name of the graphics card shown right now?,AMD.
+real_sample_153_1,00:02:20,1,00:00:05,Attribute Perception,What is the distinctive feature of the man's face?,A handlebar mustache.
+real_sample_153_1,00:02:20,2,00:01:04,Object Perception,What item is located below the painting with the golden frame?,A candelabrum.
+real_sample_153_1,00:02:20,3,00:02:20,Attribute Perception,What color is the vest of the man being helped?,Beige.
+real_sample_159_1,00:03:05,1,00:00:03,Object Perception,What is the woman wearing?,A white strapless top.
+real_sample_159_1,00:03:05,2,00:00:23,Attribute Perception,What is the color of the wall?,Light-colored with pink stripes.
+real_sample_159_1,00:03:05,3,00:01:01,Action Perception,What are the helpers doing to the woman in the golden robe?,Adjusting a braided belt.
+real_sample_159_1,00:03:05,4,00:02:10,Action Perception,What did the woman in the golden robe just do?,Selecting a bracelet from the wooden box and putting it on her hand.
+real_sample_159_1,00:03:05,5,00:03:05,Action Perception,What does the older woman do after appearing behind the young woman?,Adjusts the shawl/veil of the young woman.
+real_sample_487_1,00:01:54,1,00:00:20,Event Understanding,What is seen in the initial scene of the video?,A red racing car sped past on the track.
+real_sample_487_1,00:01:54,2,00:01:28,Event Understanding,Which color car won first place?,The red car.
+real_sample_487_1,00:01:54,3,00:01:54,Text-Rich Understanding,What is the name of the car that won third place?,Floyd Mulvihill.
+real_sample_444_1,00:00:19,1,00:00:19,Prospective Reasoning,What might the person do next after revealing more cartons in the box?,Start arranging the new cartons on the shelf.
+real_sample_99_1,00:01:58,1,00:00:16,Text-Rich Understanding,What is the assignment of this lecture?,Create a 1-3 minute experimental video.
+real_sample_99_1,00:01:58,2,00:00:52,Counting,How many movies have been mentioned in all the movie clips so far?,7.
+real_sample_99_1,00:01:58,3,00:01:26,Counting,How many movies have been mentioned in all the movie clips so far?,8.
+real_sample_99_1,00:01:58,4,00:01:58,Counting,How many movies have been mentioned in all the movie clips so far?,8.
+real_sample_222_1,00:02:33,1,00:00:09,Prospective Reasoning,What mathematical topic might the speaker talk about next?,How to simplify fractions.
+real_sample_222_1,00:02:33,2,00:01:24,Prospective Reasoning,What might the speaker talk about next?,Equivalent fractions of 3/6.
+real_sample_222_1,00:02:33,3,00:02:33,Prospective Reasoning,What might the speaker talk about next?,Simplifying fractions by finding common factors.
+real_sample_318_1,00:00:15,1,00:00:15,Causal Reasoning,Why are more and more structural details of the building becoming visible?,Because the person is moving closer to the lower level.
+sd_sample_26_1,00:00:48,1,00:00:26,Source Discrimination,Who just said 'Do you want to carry the hammer with you'?,"A dark-haired male wearing a black suit, white shirt and black tie."
+sd_sample_26_1,00:00:48,2,00:00:48,Source Discrimination,Who just said 'If you say so'?,"A brown-haired male wearing a brown suit with a white shirt, red tie, and brown-rimmed sunglasses."
+sd_sample_43_1,00:02:12,1,00:00:14,Source Discrimination,Who just asked 'Can I hold your hand'?,"A girl with black hair, wearing a yellow striped top and jean overalls."
+sd_sample_43_1,00:02:12,2,00:01:03,Source Discrimination,Who just said 'What kind of dog is that'?,"A girl with dark brown hair, black glasses and a dark coat."
+sd_sample_43_1,00:02:12,3,00:01:32,Source Discrimination,Who just said 'it poked a hole in my juice box'?,A girl wearing a pink knit hat and a pink striped top.
+sd_sample_43_1,00:02:12,4,00:01:50,Source Discrimination,Who just said 'Somebody broke that'?,A girl wearing a pink knit hat and a pink striped top.
+sd_sample_43_1,00:02:12,5,00:02:12,Source Discrimination,Who just asked 'Where did you get that'?,"A man with no hair, wearing a dark striped scarf, a black top and black pants."
+ma_sample_14_1,00:01:48,1,00:00:39,Multimodal Alignment,Describe the corresponding scene when a man said 'I'll stick with my jerky'.,A brown-haired male wearing a brown blazer with a yellow shirt and yellow and green striped tie and glasses spoke as he ate the beef jerky he held in his right hand.
+ma_sample_14_1,00:01:48,2,00:01:09,Multimodal Alignment,Describe the corresponding scene when a man said 'She's probably going to because they sit next to each other'.,A brown-haired male wearing a white shirt and black tie sits in front of the blinds and carries on a conversation.
+ma_sample_14_1,00:01:48,3,00:01:48,Multimodal Alignment,"Describe the corresponding scene when a man said 'No, God'.","A dark-haired man in a dark blue blazer, white and gray striped shirt, and black and silver striped tie was yelling at a brown-haired male in a brown top."
+ma_sample_24_1,00:02:09,1,00:00:38,Multimodal Alignment,"Describe the corresponding scene when a man said 'I am here in Shanghai, China'.","A man wearing a black coat, gray hoodie and olive green pants. On his hands, he's doing a prayer gesture."
+ma_sample_24_1,00:02:09,2,00:01:06,Multimodal Alignment,Describe the corresponding scene when a man said 'It's Friday'.,A scene in a city street has some people walking. In the background there is a modern building with a unique design and a white awning structure on top.
+ma_sample_24_1,00:02:09,3,00:02:09,Multimodal Alignment,Describe the corresponding scene when a man said 'All of these are different vegetables'.,"In the restaurant's kitchen, bowls of small, colorful ingredients sit on metal counters."
+mcu_sample_6_1,00:02:22,1,00:00:24,Misleading Context Recognition,How many playing cards can be seen right now?,Five.
+mcu_sample_6_1,00:02:22,2,00:00:55,Misleading Context Recognition,What do the white letters say now?,The white letters say 'fold'.
+mcu_sample_6_1,00:02:22,3,00:01:25,Misleading Context Recognition,How many face-up playing cards are on the table right now?,Five.
+mcu_sample_6_1,00:02:22,4,00:01:57,Misleading Context Recognition,How many symbols with white borders are now displayed?,Four.
+mcu_sample_6_1,00:02:22,5,00:02:22,Misleading Context Recognition,How many types of hand values are displayed?,Ten.
+mcu_sample_18_1,00:02:36,1,00:00:23,Misleading Context Recognition,What does the black writing on the whiteboard say?,"It says in black letters, 'LOGARITHMS', 'Ex 7-09 2-3ESL', '...are a way of looking differently'."
+mcu_sample_18_1,00:02:36,2,00:01:24,Misleading Context Recognition,What does the black writing say now?,"It says in black letters, 'LOGARITHMS', 'Ex 7-09 2-3ESL', '...are a way of looking differently', 'at exponentials or indices', 'eg 2 5=32'."
+mcu_sample_18_1,00:02:36,3,00:02:36,Misleading Context Recognition,What are the words written on these arrows?,"The words written above these arrows are 'exponent/index/power', 'the final result', 'time', 'growth rate'."
+acu_sample_21_1,00:01:32,1,00:00:21,Anomaly Context Understanding,What unusual event just occurred?,"On a side street, a black Mercedes was backing up and crashed into the car behind it."
+acu_sample_21_1,00:01:32,2,00:00:45,Anomaly Context Understanding,What unusual event just occurred?,"At a traffic light, a police car collided with a car, and then the police car hit two cars in succession."
+acu_sample_21_1,00:01:32,3,00:01:32,Anomaly Context Understanding,What unusual event just occurred?,"A black car collided with a white car making a left turn, and then the black car hit a traffic sign on the side of the road."
+acu_sample_48_1,00:01:34,1,00:00:27,Anomaly Context Understanding,What unusual event just occurred?,"When the man lifted the little girl up, the chair they were sitting on fell back."
+acu_sample_48_1,00:01:34,2,00:01:03,Anomaly Context Understanding,What unusual event just occurred?,A little baby accidentally fell out of bed while climbing to the right.
+acu_sample_48_1,00:01:34,3,00:01:34,Anomaly Context Understanding,What unusual event just occurred?,"A gray car suddenly accelerated in reverse. It broke through the guardrail next to the lawn, nearly hit the man and child, and finally crashed into the left wall."
+sqa_sample_23_1,00:02:32,1,00:00:17,Sequential Question Answering,What is the name of the player wearing a light blue outfit?,Shapovalov.
+sqa_sample_23_1,00:02:32,2,00:00:34,Sequential Question Answering,How many points has the player referred to in the previous question obtained in the current game?,0.
+sqa_sample_23_1,00:02:32,3,00:01:23,Sequential Question Answering,How many points has the opponent of the player referred to in the previous question obtained in the current game?,15.
+sqa_sample_23_1,00:02:32,4,00:01:56,Sequential Question Answering,How many points has the player referred to in the first question obtained in the current game?,AD.
+sqa_sample_23_1,00:02:32,5,00:02:32,Sequential Question Answering,How many points has the player referred to in the third question obtained in the current game?,30.
+sqa_sample_3_1,00:04:32,1,00:00:10,Sequential Question Answering,Who is preparing to serve the ball now?,Ma Long.
+sqa_sample_3_1,00:04:32,2,00:01:24,Sequential Question Answering,How many points has the player mentioned in the previous question obtained in the current game?,0.
+sqa_sample_3_1,00:04:32,3,00:02:36,Sequential Question Answering,How many points has the opponent of the player mentioned in the previous question obtained in the current game?,2.
+sqa_sample_3_1,00:04:32,4,00:03:25,Sequential Question Answering,How many points has the player mentioned in the first question obtained in the current game?,4.
+sqa_sample_3_1,00:04:32,5,00:04:32,Sequential Question Answering,How many points has the player mentioned in the third question obtained in the current game?,3.
+proactive_sample_28_1,00:00:52,1,00:00:01,Proactive Output,"When the dealer places the cards on the table to start the game, output ""Game Start"".",00:00:42
+proactive_sample_35_1,00:00:33,1,00:00:04,Proactive Output,"When a yellow card is drawn later, output ""yellow card"".",00:00:23
+proactive_sample_50_1,00:00:45,1,00:00:14,Proactive Output,"When the player makes the first shot, output ""First Shot Taken"".",00:00:35
+proactive_sample_13_1,00:00:35,1,00:00:05,Proactive Output,"When the scoreboard shows 2 points for USA, output ""2 points"".",00:00:25
+er_sample_1_1,00:02:34,1,00:00:14,Emotion Recognition,What is the current emotion of the man on the right side of the video?,He is very flustered.
+er_sample_1_1,00:02:34,2,00:01:15,Emotion Recognition,"What is the current mood of the man on the left side of the video, and what is causing his emotional changes?",He is very happy because there happens to be the equipment he mentioned here.
+er_sample_1_1,00:02:34,3,00:02:34,Emotion Recognition,"What is the current mood of the man on the right side of the video, and what is causing his emotional changes?",He is very excited because he is watching the man on the left use a cup to make music.
+er_sample_37_1,00:00:26,1,00:00:26,Emotion Recognition,What is the current mood of the man in the video wearing a black top and headphones?,He is very confused.
+er_sample_37_2,00:00:28,1,00:00:28,Emotion Recognition,What is the current mood of the man in the video wearing a black top and headphones? What has caused his mood to change?,He is happy because he sees the cat attacking the TV.
+su_sample_4_1,00:01:55,1,00:00:25,Scene Understanding,Please describe the scene that just occurred in the video. Include the narrator's words.,"A group of crabs are crawling on the rocks and they are all looking at the sea, the narrator says 'waiting for the tide to go out.'."
+su_sample_4_1,00:01:55,2,00:00:53,Scene Understanding,Please describe the scene that just occurred in the video. Include the narrator's words.,"A crab with black markings on its back leaps up from the rocks, the narrator says 'Getting there is a race against the tide.'."
+su_sample_4_1,00:01:55,3,00:01:35,Scene Understanding,Please describe the scene that just occurred in the video. Include the narrator's words.,"A moray eel with brown markings bites a crab standing on a rock and grabs it into the sea, and the narrator says 'And for good reason.'."
+su_sample_4_1,00:01:55,4,00:01:55,Scene Understanding,Please describe the scene that just occurred in the video. Include the narrator's words.,A moray eel with brown markings is hiding by a rock and the narrator says 'The chain moray is a specialist crab hunter.'.
+su_sample_21_1,00:01:16,1,00:00:14,Scene Understanding,Please describe the scene that just occurred in the video. Include the commentator's words.,"Wearing yellow clothes and green pants, size 8 quickly lifted his left foot and shot the ball into the goal. The commentator exclaimed, ""On the day he wins his 50th cap_."
+su_sample_21_1,00:01:16,2,00:01:16,Scene Understanding,Please describe the scene that just occurred in the video. Include the commentator's words.,"The No.8 player dressed in black volleyed . The commentator said, ""A problem that even Chad Kingston couldn't resist."
+vner_AngkorWat_1,00:00:10,1,00:00:05,Visual Name Entity Recognition,What is the name of this attraction and where is it located?,"Angkor Wat. Siem Reap, Cambodia."
+vner_EiffelTower_1,00:00:10,1,00:00:05,Visual Name Entity Recognition,What is the name of this attraction and where is it located?,"Eiffel Tower. Paris, France."
+vner_GreatWall_1,00:00:10,1,00:00:05,Visual Name Entity Recognition,What is the name of this attraction and where is it located?,"Great Wall of China. Beijing, China."
+vner_MachuPicchu,00:00:15,1,00:00:10,Visual Name Entity Recognition,What is the name of this attraction and where is it located?,"Machu Picchu. Cusco, Peru."
+vner_TajMahal_1,00:00:15,1,00:00:10,Visual Name Entity Recognition,What is the name of this attraction and where is it located?,"Taj Mahal. Agra, India."
+vner_apple_1,00:00:10,1,00:00:05,Visual Name Entity Recognition,What is the brand of this laptop?,Apple.
+vner_louisvuitton,00:00:15,1,00:00:10,Visual Name Entity Recognition,What is the brand of these handbags?,Louis Vuitton.
+vner_mastercard_1,00:00:10,1,00:00:05,Visual Name Entity Recognition,What is the brand of this credit card?,Mastercard.
+vner_mcdonald_1,00:00:10,1,00:00:05,Visual Name Entity Recognition,What brand is this?,McDonald's.
+vner_toyota_1,00:00:10,1,00:00:05,Visual Name Entity Recognition,What is the brand of this car?,Toyota.
+vner_friedrice,00:00:11,1,00:00:06,Visual Name Entity Recognition,What is the name of this dish?,Fried Rice.
+vner_pasta,00:00:10,1,00:00:05,Visual Name Entity Recognition,What is the name of this dish?,Pasta.
+vner_pizza_1,00:00:10,1,00:00:05,Visual Name Entity Recognition,What is the name of this dish?,Pizza.
+vner_sushi,00:00:12,1,00:00:07,Visual Name Entity Recognition,What is the name of this dish?,Sushi.
+vner_tacos_1,00:00:15,1,00:00:10,Visual Name Entity Recognition,What is the name of this dish?,Tacos.
+math_1,00:00:15,1,00:00:03,Math Problem Solving,What is the correct option for this math problem? Include the answer in your response.,B
+math_2,00:00:20,1,00:00:03,Math Problem Solving,What is the correct option for this math problem? Include the answer in your response.,A
+math_3,00:00:15,1,00:00:03,Math Problem Solving,What is the correct option for this math problem? Include the answer in your response.,C
+math_4,00:00:15,1,00:00:03,Math Problem Solving,What is the answer to this math problem? Include the answer in your response.,161+72*sqrt(5)
+math_5,00:00:15,1,00:00:03,Math Problem Solving,What is the value of x? Include the answer in your response.,1.716
+math_6,00:00:20,1,00:00:03,Math Problem Solving,What is the answer to this geometry problem? Include the answer in your response.,8
+math_7,00:00:15,1,00:00:03,Math Problem Solving,What is the answer to this geometry problem? Include the answer in your response.,16/sqrt(17)
+math_8,00:00:20,1,00:00:03,Math Problem Solving,What is the answer to this geometry problem? Include the answer in your response.,2/3
+math_9,00:00:15,1,00:00:03,Math Problem Solving,What is the answer to this geometry problem? Include the answer in your response.,15
+math_10,00:00:20,1,00:00:03,Math Problem Solving,What is the answer to this geometry problem? Include the answer in your response.,sqrt(2)

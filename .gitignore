@@ -1,0 +1,22 @@
+# Generated and downloaded media files
+datasets/videos/
+datasets/audios/
+datasets/videos_mem/
+datasets/audios_mem/
+datasets/audio_info.csv
+
+# Test artifacts
+test_scripts/artifacts/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+*.egg
+
+# OS
+.DS_Store
+Thumbs.db
