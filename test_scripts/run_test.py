@@ -285,10 +285,18 @@ def main():
         cases = trimmed
         print(f"Starting from {start} ({len(cases)} videos remaining)")
 
-    # Ensure adb root
+    # Preflight: connect and get root
+    if args.serial:
+        print(f"Connecting ADB to {args.serial} ...")
+        run_adb(f"adb connect {args.serial}")
+    print("Requesting ADB root ...")
     run_adb("adb root", args.serial)
+    time.sleep(2)
+    # Re-connect after root restart (adb root may drop the connection)
+    if args.serial:
+        run_adb(f"adb connect {args.serial}")
 
-    print(f"App: {args.app}")
+    print(f"\nApp: {args.app}")
     print(f"Videos: {len(cases)}")
     print(f"Iterations: {args.iterations}")
     print(f"Interval: {args.interval}s\n")

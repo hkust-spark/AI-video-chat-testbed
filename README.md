@@ -24,6 +24,7 @@ ai-video-chat-testbed/
 │   └── README.md            # dataset documentation
 └── test_scripts/
     ├── apps.json            # per-app UI automation configuration
+    ├── run_test.sh          # convenience wrapper (activates venv)
     ├── run_test.py          # unified test runner
     ├── obs_controller.py    # OBS WebSocket controller
     ├── setup.sh             # virtual camera & audio routing setup
@@ -83,12 +84,7 @@ Or use xrdp to connect with a remote desktop client.
 ### 3. Connect to the Genymotion Android emulator
 
 - Open Firefox on the media source server and navigate to the Genymotion emulator's IP address.
-- Connect ADB:
-
-```bash
-adb connect <emulator_private_ip>:5555
-adb root
-```
+- ADB connection and root access are handled automatically by `run_test.py` when you pass `--serial <emulator_private_ip>:5555`.
 
 ### 4. Activate the Python environment and set up virtual devices
 
@@ -119,10 +115,19 @@ mkdir -p ~/test/test_videos ~/test/test_audios
 
 ### 7. Run tests
 
+The `run_test.sh` wrapper automatically activates the Python venv, connects ADB, and gets root access:
+
+```bash
+cd ~/test
+bash run_test.sh --app gemini --serial <emulator_private_ip>:5555 --iterations 2 --interval 300
+```
+
+Or activate the venv manually and call `run_test.py` directly:
+
 ```bash
 cd ~/test
 source measure/bin/activate
-python run_test.py --app gemini --iterations 2 --interval 300
+python run_test.py --app gemini --serial <emulator_private_ip>:5555 --iterations 2
 ```
 
 See `test_scripts/README.md` for the full CLI reference.
@@ -131,10 +136,10 @@ See `test_scripts/README.md` for the full CLI reference.
 
 Different apps capture different portions of the virtual camera's field of view. To ensure each app sees the complete 1280x720 video, the OBS canvas must be enlarged:
 
-| App     | Video Size | Canvas Size |
-| ------- | ---------- | ----------- |
-| Gemini  | 896x504    | 1828x1028   |
-| Grok    | 960x540    | 1706x960    |
-| Doubao  | 1228x690   | 1334x752    |
-| Yuanbao | 960x540    | 1706x960    |
-| Qwen    | 1164x655   | 1408x792    |
+| App     | Canvas Size |
+| ------- | ----------- |
+| Gemini  | 1828x1028   |
+| Grok    | 1706x960    |
+| Doubao  | 1334x752    |
+| Yuanbao | 1706x960    |
+| Qwen    | 1408x792    |

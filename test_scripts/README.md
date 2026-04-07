@@ -6,6 +6,7 @@ Automated test scripts for benchmarking AI video chat applications.  These scrip
 
 | File                | Description                                        |
 | ------------------- | -------------------------------------------------- |
+| `run_test.sh`       | Convenience wrapper — activates venv and runs tests|
 | `run_test.py`       | Main test runner — replaces per-app shell scripts  |
 | `apps.json`         | Per-app configuration (tap coordinates, packages)  |
 | `obs_controller.py` | OBS WebSocket controller for virtual camera feed   |
@@ -40,26 +41,29 @@ bash setup.sh
 
 3. Connect Firefox to the Genymotion emulator.
 
-4. Connect ADB to the emulator:
-
-```bash
-adb connect <emulator_ip>:5555
-adb root
-```
+4. ADB connection and root access are handled automatically by `run_test.py` when you pass `--serial`.
 
 ## Usage
 
+The easiest way is to use the `run_test.sh` wrapper, which activates the venv automatically:
+
 ```bash
+cd ~/test
+
 # Run one iteration on Gemini
-python run_test.py --app gemini
+bash run_test.sh --app gemini --serial <emulator_ip>:5555
 
 # Run 3 iterations on Grok with 5-minute intervals
-python run_test.py --app grok --iterations 3 --interval 300
+bash run_test.sh --app grok --serial <emulator_ip>:5555 --iterations 3 --interval 300
 
 # Resume from a specific video
-python run_test.py --app doubao --start-from real_sample_9_1
+bash run_test.sh --app doubao --serial <emulator_ip>:5555 --start-from real_sample_9_1
+```
 
-# Specify ADB serial and custom directories
+Or activate the venv manually and call `run_test.py` directly:
+
+```bash
+source ~/test/measure/bin/activate
 python run_test.py --app yuanbao \
     --serial 172.31.12.245:5555 \
     --videos-dir ~/test/test_videos \
