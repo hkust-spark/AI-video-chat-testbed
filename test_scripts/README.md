@@ -4,13 +4,13 @@ Automated test scripts for benchmarking AI video chat applications.  These scrip
 
 ## Contents
 
-| File                | Description                                        |
-| ------------------- | -------------------------------------------------- |
-| `run_test.sh`       | Convenience wrapper — activates venv and runs tests|
-| `run_test.py`       | Main test runner — replaces per-app shell scripts  |
-| `apps.json`         | Per-app configuration (tap coordinates, packages)  |
-| `obs_controller.py` | OBS WebSocket controller for virtual camera feed   |
-| `setup.sh`          | Virtual camera and PulseAudio routing setup        |
+| File                | Description                                         |
+| ------------------- | --------------------------------------------------- |
+| `run_test.sh`       | Convenience wrapper — activates venv and runs tests |
+| `run_test.py`       | Main test runner — replaces per-app shell scripts   |
+| `apps.json`         | Per-app configuration (tap coordinates, packages)   |
+| `obs_controller.py` | OBS WebSocket controller for virtual camera feed    |
+| `setup.sh`          | Virtual camera and PulseAudio routing setup         |
 
 ## Prerequisites
 
@@ -90,7 +90,7 @@ python run_test.py --app yuanbao \
 
 - `package_name` — Android package name
 - `launch_command` / `reset_command` — ADB commands to start/stop the app
-- `canvas_size` / `video_size` — OBS canvas and video dimensions
+- `canvas_size` — OBS canvas dimensions
 - `steps` — UI automation steps (new_conversation, start_call, enable_camera, end_call) with tap/swipe coordinates
 
 ## Artifacts

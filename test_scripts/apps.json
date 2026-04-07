@@ -5,7 +5,6 @@
       "launch_command": ["shell", "input", "tap", "70", "100"],
       "reset_command": ["shell", "am", "force-stop", "com.google.android.googlequicksearchbox"],
       "canvas_size": [1828, 1028],
-      "video_size": [896, 504],
       "steps": {
         "new_conversation": {
           "commands": [
@@ -34,7 +33,6 @@
       "launch_command": ["shell", "monkey", "-p", "ai.x.grok", "-c", "android.intent.category.LAUNCHER", "1"],
       "reset_command": ["shell", "am", "force-stop", "ai.x.grok"],
       "canvas_size": [1706, 960],
-      "video_size": [960, 540],
       "steps": {
         "new_conversation": {
           "commands": [
@@ -63,7 +61,6 @@
       "launch_command": ["shell", "monkey", "-p", "com.larus.nova", "-c", "android.intent.category.LAUNCHER", "1"],
       "reset_command": ["shell", "am", "force-stop", "com.larus.nova"],
       "canvas_size": [1334, 752],
-      "video_size": [1228, 690],
       "steps": {
         "new_conversation": {
           "commands": [
@@ -93,7 +90,6 @@
       "launch_command": ["shell", "monkey", "-p", "com.tencent.hunyuan.app.chat", "-c", "android.intent.category.LAUNCHER", "1"],
       "reset_command": ["shell", "am", "force-stop", "com.tencent.hunyuan.app.chat"],
       "canvas_size": [1706, 960],
-      "video_size": [960, 540],
       "steps": {
         "new_conversation": {
           "commands": [
@@ -122,7 +118,6 @@
       "launch_command": ["shell", "monkey", "-p", "com.aliyun.tongyi", "-c", "android.intent.category.LAUNCHER", "1"],
       "reset_command": ["shell", "am", "force-stop", "com.aliyun.tongyi"],
       "canvas_size": [1408, 792],
-      "video_size": [1164, 655],
       "steps": {
         "new_conversation": {
           "commands": [
