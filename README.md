@@ -84,11 +84,11 @@ Or use xrdp to connect with a remote desktop client.
 ### 3. Connect to the Genymotion Android emulator
 
 - Open Firefox on the media source server and navigate to the Genymotion emulator's IP address.
-- ADB connection and root access are handled automatically by `run_test.py` when you pass `--serial <emulator_private_ip>:5555`.
+- ADB connection and root access are handled automatically by `run_test.sh` when you pass `--serial <emulator_private_ip>:5555` (see Step 7).
 
-### 4. Activate the Python environment and set up virtual devices
+### 4. Set up virtual devices
 
-The media source server has a Python virtual environment at `~/test/measure`:
+The media source server has a Python virtual environment at `~/test/measure`. The `run_test.sh` wrapper activates it automatically, but for the one-time setup you need to activate it manually:
 
 ```bash
 cd ~/test
@@ -122,24 +122,4 @@ cd ~/test
 bash run_test.sh --app gemini --serial <emulator_private_ip>:5555 --iterations 2 --interval 300
 ```
 
-Or activate the venv manually and call `run_test.py` directly:
-
-```bash
-cd ~/test
-source measure/bin/activate
-python run_test.py --app gemini --serial <emulator_private_ip>:5555 --iterations 2
-```
-
 See `test_scripts/README.md` for the full CLI reference.
-
-## Canvas Size Reference
-
-Different apps capture different portions of the virtual camera's field of view. To ensure each app sees the complete 1280x720 video, the OBS canvas must be enlarged:
-
-| App     | Canvas Size |
-| ------- | ----------- |
-| Gemini  | 1828x1028   |
-| Grok    | 1706x960    |
-| Doubao  | 1334x752    |
-| Yuanbao | 1706x960    |
-| Qwen    | 1408x792    |
