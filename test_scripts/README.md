@@ -26,11 +26,10 @@ Automated test scripts for benchmarking AI video chat applications.  These scrip
 
 ## Setup
 
-1. Activate the Python environment and run the setup script:
+1. Run the setup script (once per boot):
 
 ```bash
 cd ~/test
-source measure/bin/activate
 bash setup.sh
 ```
 
@@ -92,6 +91,14 @@ python run_test.py --app yuanbao \
 - `launch_command` / `reset_command` — ADB commands to start/stop the app
 - `canvas_size` — OBS canvas dimensions
 - `steps` — UI automation steps (new_conversation, start_call, enable_camera, end_call) with tap/swipe coordinates
+
+### Canvas Size Reference
+
+Different apps capture different portions of the virtual camera's field of view. To ensure each app sees the complete 1280x720 video, the OBS canvas must be enlarged:
+
+| App         | Gemini    | Grok     | Doubao   | Yuanbao  | Qwen     |
+| ----------- | --------- | -------- | -------- | -------- | -------- |
+| Canvas Size | 1828x1028 | 1706x960 | 1334x752 | 1706x960 | 1408x792 |
 
 ## Artifacts
 

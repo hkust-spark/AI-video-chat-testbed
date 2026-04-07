@@ -88,13 +88,12 @@ Or use xrdp to connect with a remote desktop client.
 
 ### 4. Set up virtual devices
 
-The media source server has a Python virtual environment at `~/test/measure`. The `run_test.sh` wrapper activates it automatically, but for the one-time setup you need to activate it manually:
-
 ```bash
 cd ~/test
-source measure/bin/activate
 bash setup.sh
 ```
+
+This configures the virtual camera (v4l2loopback) and PulseAudio routing. Run it once per boot.
 
 ### 5. Configure OBS Studio
 
