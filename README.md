@@ -4,13 +4,13 @@ An open-source testbed for benchmarking AI video chat applications.  It provides
 
 ## Tested Applications
 
-| App     | Package Name                                |
-| ------- | ------------------------------------------- |
-| Gemini  | `com.google.android.googlequicksearchbox`   |
-| Grok    | `ai.x.grok`                                |
-| Doubao  | `com.larus.nova`                            |
-| Yuanbao | `com.tencent.hunyuan.app.chat`              |
-| Qwen    | `com.aliyun.tongyi`                         |
+| App     | Company   | Package Name                                |
+| ------- | --------- | ------------------------------------------- |
+| Gemini  | Google    | `com.google.android.googlequicksearchbox`   |
+| Grok    | xAI       | `ai.x.grok`                                 |
+| Doubao  | ByteDance | `com.larus.nova`                            |
+| Yuanbao | Tencent   | `com.tencent.hunyuan.app.chat`              |
+| Qwen    | Alibaba   | `com.aliyun.tongyi`                         |
 
 ## Repository Structure
 
