@@ -18,8 +18,8 @@ An open-source testbed for benchmarking AI video chat applications.  It provides
 ai-video-chat-testbed/
 ├── README.md                # this file
 ├── datasets/
-│   ├── dataset.csv          # standard benchmark metadata (131 questions)
-│   ├── dataset_mem.csv      # memory benchmark metadata (553 questions)
+│   ├── dataset.csv          # standard benchmark metadata
+│   ├── dataset_mem.csv      # memory benchmark metadata
 │   ├── generate.py          # media generation script
 │   └── README.md            # dataset documentation
 └── test_scripts/
