@@ -19,7 +19,7 @@ ai-video-chat-testbed/
 ├── README.md                # this file
 ├── datasets/
 │   ├── dataset.csv          # standard benchmark metadata (131 questions)
-│   ├── mem_dataset.csv      # memory benchmark metadata (553 questions)
+│   ├── dataset_mem.csv      # memory benchmark metadata (553 questions)
 │   ├── generate.py          # media generation script
 │   └── README.md            # dataset documentation
 └── test_scripts/

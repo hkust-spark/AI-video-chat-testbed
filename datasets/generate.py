@@ -1,7 +1,7 @@
 """Generate question audio tracks and processed videos for the AI video chat
 benchmark datasets.
 
-This script reads ``dataset.csv`` and ``mem_dataset.csv``, synthesises spoken
+This script reads ``dataset.csv`` and ``dataset_mem.csv``, synthesises spoken
 question audio using Google Text-to-Speech, and optionally processes the source
 videos (scaling, stripping audio, and clipping memory segments).
 
@@ -45,7 +45,7 @@ from pydub import AudioSegment
 
 DATASET_DIR = Path(__file__).resolve().parent
 DATASET_CSV = DATASET_DIR / "dataset.csv"
-MEMORY_DATASET_CSV = DATASET_DIR / "mem_dataset.csv"
+MEMORY_DATASET_CSV = DATASET_DIR / "dataset_mem.csv"
 AUDIO_INFO_CSV = DATASET_DIR / "audio_info.csv"
 
 VIDEO_DIR = DATASET_DIR / "videos"

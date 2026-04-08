@@ -5,7 +5,7 @@ This directory contains the benchmark dataset metadata and the media generation 
 ## Overview
 
 - **Standard dataset** (`dataset.csv`): 131 questions across 67 videos covering task types such as Text-Rich Understanding, Object Perception, Counting, Emotion Recognition, and more.
-- **Memory dataset** (`mem_dataset.csv`): 553 questions across 56 memory clips derived from 3 source videos, testing whether AI apps can recall earlier context during a video call.
+- **Memory dataset** (`dataset_mem.csv`): 553 questions across 56 memory clips derived from 3 source videos, testing whether AI apps can recall earlier context during a video call.
 
 ## Downloading Videos
 
@@ -26,7 +26,7 @@ After downloading videos and running `generate.py`, the directory looks like:
 ```
 datasets/
 ├── dataset.csv          # standard benchmark metadata
-├── mem_dataset.csv      # memory benchmark metadata
+├── dataset_mem.csv      # memory benchmark metadata
 ├── audio_info.csv       # generated audio duration metadata
 ├── generate.py          # media generation script
 ├── videos/              # standard benchmark videos (from GitHub release)
@@ -49,7 +49,7 @@ datasets/
 | `question`           | The spoken question text                             |
 | `answer`             | Reference answer                                     |
 
-### `mem_dataset.csv`
+### `dataset_mem.csv`
 
 Same columns as `dataset.csv`.  All rows have `task_type = Memory` and `answer` is intentionally blank.
 
@@ -114,7 +114,7 @@ python generate.py --dataset memory --video-id mem_1_150
 
 **Memory mode** (`--dataset memory`):
 
-1. Regenerates `mem_dataset.csv` on a strict 30-second grid.
+1. Regenerates `dataset_mem.csv` on a strict 30-second grid.
 2. Synthesizes question-only audio with gTTS.
 3. Clips raw segments from the 3 source videos, scales, and strips audio.
 4. Updates `audio_info.csv` with the final-question durations.
