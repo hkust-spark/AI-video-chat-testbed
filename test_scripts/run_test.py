@@ -40,7 +40,7 @@ from pathlib import Path
 SCRIPT_DIR = Path(__file__).resolve().parent
 APPS_JSON = SCRIPT_DIR / "apps.json"
 
-STEP_ORDER = ["new_conversation", "start_call", "enable_camera"]
+STEP_ORDER = ["new_conversation", "prepare_call", "start_call", "enable_camera"]
 
 # Time intervals between ADB operations (seconds)
 SLEEP_BETWEEN_COMMANDS = 3   # between consecutive taps/swipes in a step
@@ -129,9 +129,9 @@ def run_single_test(
 
     # --- Force-stop and relaunch ---
     adb_prefix = f"adb -s {serial}" if serial else "adb"
-    reset_cmd = app_cfg["reset_command"]
-    run_adb(f"adb {' '.join(reset_cmd)}", serial)
-    time.sleep(SLEEP_BETWEEN_COMMANDS)
+    for reset_cmd in app_cfg["reset_commands"]:
+        run_adb(f"adb {' '.join(reset_cmd)}", serial)
+        time.sleep(SLEEP_BETWEEN_COMMANDS)
 
     launch_cmd = app_cfg["launch_command"]
     run_adb(f"adb {' '.join(launch_cmd)}", serial)

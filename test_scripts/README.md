@@ -88,9 +88,15 @@ python run_test.py --app yuanbao \
 `apps.json` defines per-app settings:
 
 - `package_name` — Android package name
-- `launch_command` / `reset_command` — ADB commands to start/stop the app
+- `launch_command` — ADB command to start the app
+- `reset_commands` — List of ADB commands to stop the app (some apps need multiple force-stops)
 - `canvas_size` — OBS canvas dimensions
-- `steps` — UI automation steps (new_conversation, start_call, enable_camera, end_call) with tap/swipe coordinates
+- `steps` — UI automation steps with tap/swipe coordinates:
+  - `new_conversation` — open a fresh conversation
+  - `prepare_call` — pre-call actions (e.g., Qwen swipes to reveal the call button)
+  - `start_call` — initiate the video call
+  - `enable_camera` — turn on the camera
+  - `end_call` — hang up
 
 ### Canvas Size Reference
 

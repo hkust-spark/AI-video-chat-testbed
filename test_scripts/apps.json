@@ -1,14 +1,22 @@
 {
   "apps": {
     "gemini": {
-      "package_name": "com.google.android.googlequicksearchbox",
-      "launch_command": ["shell", "input", "tap", "70", "100"],
-      "reset_command": ["shell", "am", "force-stop", "com.google.android.googlequicksearchbox"],
+      "package_name": "com.google.android.apps.bard",
+      "launch_command": ["shell", "monkey", "-p", "com.google.android.apps.bard", "-c", "android.intent.category.LAUNCHER", "1"],
+      "reset_commands": [
+        ["shell", "am", "force-stop", "com.google.android.apps.bard"],
+        ["shell", "am", "force-stop", "com.google.android.googlequicksearchbox"]
+      ],
       "canvas_size": [1828, 1028],
       "steps": {
         "new_conversation": {
           "commands": [
             {"type": "noop", "description": "Gemini opens directly into a fresh conversation"}
+          ]
+        },
+        "prepare_call": {
+          "commands": [
+            {"type": "noop", "description": "No preparation needed"}
           ]
         },
         "start_call": {
@@ -31,12 +39,19 @@
     "grok": {
       "package_name": "ai.x.grok",
       "launch_command": ["shell", "monkey", "-p", "ai.x.grok", "-c", "android.intent.category.LAUNCHER", "1"],
-      "reset_command": ["shell", "am", "force-stop", "ai.x.grok"],
+      "reset_commands": [
+        ["shell", "am", "force-stop", "ai.x.grok"]
+      ],
       "canvas_size": [1706, 960],
       "steps": {
         "new_conversation": {
           "commands": [
             {"type": "noop", "description": "Grok opens directly into a fresh conversation"}
+          ]
+        },
+        "prepare_call": {
+          "commands": [
+            {"type": "noop", "description": "No preparation needed"}
           ]
         },
         "start_call": {
@@ -59,13 +74,20 @@
     "doubao": {
       "package_name": "com.larus.nova",
       "launch_command": ["shell", "monkey", "-p", "com.larus.nova", "-c", "android.intent.category.LAUNCHER", "1"],
-      "reset_command": ["shell", "am", "force-stop", "com.larus.nova"],
+      "reset_commands": [
+        ["shell", "am", "force-stop", "com.larus.nova"]
+      ],
       "canvas_size": [1334, 752],
       "steps": {
         "new_conversation": {
           "commands": [
             {"type": "tap", "x": 40, "y": 70, "description": "Open Doubao new conversation menu"},
-            {"type": "tap", "x": 550, "y": 70, "description": "Confirm Doubao new conversation"}
+            {"type": "tap", "x": 480, "y": 70, "description": "Confirm Doubao new conversation"}
+          ]
+        },
+        "prepare_call": {
+          "commands": [
+            {"type": "noop", "description": "No preparation needed"}
           ]
         },
         "start_call": {
@@ -88,12 +110,19 @@
     "yuanbao": {
       "package_name": "com.tencent.hunyuan.app.chat",
       "launch_command": ["shell", "monkey", "-p", "com.tencent.hunyuan.app.chat", "-c", "android.intent.category.LAUNCHER", "1"],
-      "reset_command": ["shell", "am", "force-stop", "com.tencent.hunyuan.app.chat"],
+      "reset_commands": [
+        ["shell", "am", "force-stop", "com.tencent.hunyuan.app.chat"]
+      ],
       "canvas_size": [1706, 960],
       "steps": {
         "new_conversation": {
           "commands": [
             {"type": "noop", "description": "Yuanbao opens directly into a fresh conversation"}
+          ]
+        },
+        "prepare_call": {
+          "commands": [
+            {"type": "noop", "description": "No preparation needed"}
           ]
         },
         "start_call": {
@@ -116,7 +145,9 @@
     "qwen": {
       "package_name": "com.aliyun.tongyi",
       "launch_command": ["shell", "monkey", "-p", "com.aliyun.tongyi", "-c", "android.intent.category.LAUNCHER", "1"],
-      "reset_command": ["shell", "am", "force-stop", "com.aliyun.tongyi"],
+      "reset_commands": [
+        ["shell", "am", "force-stop", "com.aliyun.tongyi"]
+      ],
       "canvas_size": [1408, 792],
       "steps": {
         "new_conversation": {
@@ -125,10 +156,14 @@
             {"type": "tap", "x": 230, "y": 120, "description": "Confirm Qwen new conversation"}
           ]
         },
-        "start_call": {
+        "prepare_call": {
           "commands": [
             {"type": "swipe", "x1": 590, "y1": 830, "x2": 10, "y2": 830, "duration_ms": 800, "description": "Reveal Qwen call tools (first swipe)"},
-            {"type": "swipe", "x1": 590, "y1": 830, "x2": 10, "y2": 830, "duration_ms": 800, "description": "Reveal Qwen call tools (retry for reliability)"},
+            {"type": "swipe", "x1": 590, "y1": 830, "x2": 10, "y2": 830, "duration_ms": 800, "description": "Reveal Qwen call tools (retry for reliability)"}
+          ]
+        },
+        "start_call": {
+          "commands": [
             {"type": "tap", "x": 210, "y": 830, "description": "Start Qwen call"}
           ]
         },
