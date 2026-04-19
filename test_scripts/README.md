@@ -83,6 +83,16 @@ python run_test.py --app yuanbao \
 | `--audios-dir`    | test_audios   | Directory with `.wav` question audio          |
 | `--artifacts-dir` | artifacts     | Root directory for captured artifacts         |
 
+## OBS WebSocket Configuration
+
+The `obs_controller.py` script connects to OBS's WebSocket server. The defaults match the public `media_source_server` AMI (`localhost:4455` with a preset password). If you run your own OBS instance with different settings, override them via environment variables:
+
+```bash
+export OBS_WEBSOCKET_HOST=localhost         # default: localhost
+export OBS_WEBSOCKET_PORT=4455              # default: 4455
+export OBS_WEBSOCKET_PASSWORD=your-password # default matches the AMI
+```
+
 ## App Configuration
 
 `apps.json` defines per-app settings:

@@ -22,9 +22,11 @@ import sys
 import obsws_python as obs
 
 SOURCE_NAME = "Media Source"
-HOST = "localhost"
-PORT = 4455
-PASSWORD = "iZXEvU9sdOQklOZW"
+HOST = os.environ.get("OBS_WEBSOCKET_HOST", "localhost")
+PORT = int(os.environ.get("OBS_WEBSOCKET_PORT", "4455"))
+# Default matches the password baked into the public media-source-server AMI.
+# Override via OBS_WEBSOCKET_PASSWORD env var if you run your own OBS instance.
+PASSWORD = os.environ.get("OBS_WEBSOCKET_PASSWORD", "iZXEvU9sdOQklOZW")
 
 VIDEO_SIZE = (1280, 720)
 
