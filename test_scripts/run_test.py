@@ -40,7 +40,7 @@ from pathlib import Path
 SCRIPT_DIR = Path(__file__).resolve().parent
 APPS_JSON = SCRIPT_DIR / "apps.json"
 
-STEP_ORDER = ["new_conversation", "prepare_call", "start_call", "enable_camera"]
+STEP_ORDER = ["new_conversation", "start_call", "enable_camera"]
 
 # Time intervals between ADB operations (seconds)
 SLEEP_BETWEEN_COMMANDS = 3   # between consecutive taps/swipes in a step

@@ -14,11 +14,6 @@
             {"type": "noop", "description": "Gemini opens directly into a fresh conversation"}
           ]
         },
-        "prepare_call": {
-          "commands": [
-            {"type": "noop", "description": "No preparation needed"}
-          ]
-        },
         "start_call": {
           "commands": [
             {"type": "tap", "x": 900, "y": 550, "description": "Start Gemini live call"}
@@ -47,11 +42,6 @@
         "new_conversation": {
           "commands": [
             {"type": "noop", "description": "Grok opens directly into a fresh conversation"}
-          ]
-        },
-        "prepare_call": {
-          "commands": [
-            {"type": "noop", "description": "No preparation needed"}
           ]
         },
         "start_call": {
@@ -85,11 +75,6 @@
             {"type": "tap", "x": 480, "y": 70, "description": "Confirm Doubao new conversation"}
           ]
         },
-        "prepare_call": {
-          "commands": [
-            {"type": "noop", "description": "No preparation needed"}
-          ]
-        },
         "start_call": {
           "commands": [
             {"type": "tap", "x": 480, "y": 70, "description": "Start Doubao call"}
@@ -118,11 +103,6 @@
         "new_conversation": {
           "commands": [
             {"type": "noop", "description": "Yuanbao opens directly into a fresh conversation"}
-          ]
-        },
-        "prepare_call": {
-          "commands": [
-            {"type": "noop", "description": "No preparation needed"}
           ]
         },
         "start_call": {
@@ -156,14 +136,10 @@
             {"type": "tap", "x": 230, "y": 120, "description": "Confirm Qwen new conversation"}
           ]
         },
-        "prepare_call": {
-          "commands": [
-            {"type": "swipe", "x1": 590, "y1": 830, "x2": 10, "y2": 830, "duration_ms": 800, "description": "Reveal Qwen call tools (first swipe)"},
-            {"type": "swipe", "x1": 590, "y1": 830, "x2": 10, "y2": 830, "duration_ms": 800, "description": "Reveal Qwen call tools (retry for reliability)"}
-          ]
-        },
         "start_call": {
           "commands": [
+            {"type": "swipe", "x1": 590, "y1": 830, "x2": 10, "y2": 830, "duration_ms": 800, "description": "Reveal Qwen call tools (first swipe)"},
+            {"type": "swipe", "x1": 590, "y1": 830, "x2": 10, "y2": 830, "duration_ms": 800, "description": "Reveal Qwen call tools (retry for reliability)"},
             {"type": "tap", "x": 210, "y": 830, "description": "Start Qwen call"}
           ]
         },

@@ -103,8 +103,7 @@ export OBS_WEBSOCKET_PASSWORD=your-password # default matches the AMI
 - `canvas_size` — OBS canvas dimensions
 - `steps` — UI automation steps with tap/swipe coordinates:
   - `new_conversation` — open a fresh conversation
-  - `prepare_call` — pre-call actions (e.g., Qwen swipes to reveal the call button)
-  - `start_call` — initiate the video call
+  - `start_call` — initiate the video call (may include preparatory swipes, e.g., for Qwen)
   - `enable_camera` — turn on the camera
   - `end_call` — hang up
 
